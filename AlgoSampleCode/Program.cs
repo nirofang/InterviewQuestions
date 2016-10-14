@@ -48,9 +48,49 @@ namespace AlgoSampleCode
             // input {1, 3 ,5}
             // ouput all combinations like {1} {3} {1, 3}
             FindSubset.RunSmaple();
-            
+
+
+            // Removal of every 'kth' person from a circle. Find the last remaining person
+            // http://stackoverflow.com/questions/3810789/removal-of-every-kth-person-from-a-circle-find-the-last-remaining-person
+            int result = JosephusProblem(6, 3);
+            result = JosephusProblem(7, 3);
+
+            // http://stackoverflow.com/questions/727707/finding-all-combinations-of-well-formed-brackets
+            PrintValidBrackets(3);
+
         }
 
+        private static void PrintValidBrackets(int n)
+        {
+            for (int i = 1; i <= n; i++)
+            {
+                PrintValidBrackets("", 0, 0, i);
+            }
+        }
+
+        private static void PrintValidBrackets(string output, int open, int close, int pairs)
+        {
+            if ((open == pairs) && (close == pairs))
+            {
+                Console.WriteLine(output);
+            }
+            else
+            {
+                if (open < pairs)
+                    PrintValidBrackets(output + "(", open + 1, close, pairs);
+                if (close < open)
+                    PrintValidBrackets(output + ")", open, close + 1, pairs);
+            }
+        }
+
+        static int JosephusProblem(int n, int k)
+        {
+            int r = 0;
+            for (int i = 2; i <= n; i++)
+                r = (r + k) % i;
+
+            return r;
+        }
 
         static string ConvertLowerToBegin(char[] content)
         {
