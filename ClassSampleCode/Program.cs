@@ -62,7 +62,7 @@ namespace ClassSampleCode
 
             TestGenCol.RunSample();
 
-
+            DelegateSample.RunSample();
             Console.Read();
 
         }

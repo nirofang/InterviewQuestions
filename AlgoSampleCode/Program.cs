@@ -31,32 +31,70 @@ namespace AlgoSampleCode
             char outChr = FindFirstNonRepeatChar(input.ToCharArray());
 
             // 输出螺旋矩阵
+            Console.WriteLine("Spiral array n = 10");
             int[,] a = GetNNSpiralMatrix(10);
-            for (int i = 0; i < 10; i++)
-            {
-                for (int j = 0; j < 10; j++)
-                {
-                    Console.Write("{0}\t", a[i, j]);
-                }
-                Console.WriteLine();
-            }
+
+            Console.WriteLine("Spiral array n = 4");
+            a = GetNNSpiralMatrix(4);
+
 
             /// There is a collection "C" which contians numbers between 0 and 9, but not all of them. Given a number T, plesae write a function to return a number K, ensure K is the smallest one that larger than T. (The number "K" will be constitute by any number of "C").
-            //Combinations.RunSmaple();
+            Combinations.RunSmaple();
 
 
             // input {1, 3 ,5}
             // ouput all combinations like {1} {3} {1, 3}
+            Console.WriteLine("Find all subsets of an array, solution 1");
             FindSubset.RunSmaple();
+            Console.WriteLine("Find all subsets of an array, solution 2");
+            FindSubset.RunSample2();
 
 
             // Removal of every 'kth' person from a circle. Find the last remaining person
             // http://stackoverflow.com/questions/3810789/removal-of-every-kth-person-from-a-circle-find-the-last-remaining-person
+
+            // http://baike.baidu.com/link?url=59d3xu9IVjs8_zN1DaNhhTXuAgET_Ct0uzVSZeQdssDNHZ45Mg5wdXnJv6rpIM4_xpfgxCYvpuM2oVBcCyPmtR8ylO9dm7hOHZS2GUgoapo_zjq6IwjXnbZitSWPZoiejEjBal-1InnfhYxp-PzS0q
+
+            // Solution 1: Use Mod O(n), hight efficient
             int result = JosephusProblem(6, 3);
             result = JosephusProblem(7, 3);
 
+            // Solution 2: Use circle array, lower efficient
+            JosephusProblem2(7, 3);
+
             // http://stackoverflow.com/questions/727707/finding-all-combinations-of-well-formed-brackets
             PrintValidBrackets(3);
+
+        }
+
+        private static void JosephusProblem2(int n, int k)
+        {
+            //var loosersLst = new List<bool>(n);
+            //for (int i=0; i<n; i++)
+            //{
+            //    loosersLst.Add(false);
+            //}
+            bool[] loosers = Enumerable.Repeat<bool>(false, n).ToArray();
+            int t = 0, s = 0, l = 0;
+            do
+            {
+                if (t == n)
+                {
+                    t = 0;
+                }
+                if (!(loosers[t]))
+                {
+                    s++;
+                }
+                if (s == k)
+                {
+                    s = 0;
+                    loosers[t] = true;
+                    Console.WriteLine("Looser {0} is kicked out!", t);
+                    l++;
+                }
+                t++;
+            } while (l < n);
 
         }
 
@@ -88,9 +126,10 @@ namespace AlgoSampleCode
             int r = 0;
             for (int i = 2; i <= n; i++)
                 r = (r + k) % i;
-
+            Console.WriteLine("{0} is the winner of n:{1} k:{2}", r, n ,k);
             return r;
         }
+
 
         static string ConvertLowerToBegin(char[] content)
         {
@@ -186,7 +225,10 @@ namespace AlgoSampleCode
 
         static char FindFirstNonRepeatChar(char[] content)
         {
-
+            if (content == null)
+            {
+                throw new ArgumentException("Input array cannot be null!");
+            }
             Dictionary<char, int> chDic = new Dictionary<char, int>();
             for (int i = 0; i < content.Length; i++)
             {
@@ -195,14 +237,31 @@ namespace AlgoSampleCode
                 else
                     chDic[content[i]]++;
             }
-            var chCol = chDic.Where(c => c.Value == 1);
-            if (chCol.Count() > 0)
-                return chCol.First().Key;
-            else
-                throw new ArgumentException("input parameter doesn't contain non-repeat char!");
+            //var chCol = chDic.Where(c => c.Value == 1);
+            //if (chCol.Count() > 0)
+            //    return chCol.First().Key;
+            //else
+            //    throw new ArgumentException("input parameter doesn't contain non-repeat char!");
+
+            for (int i = 0; i < content.Length; i++)
+            {
+                if (chDic[content[i]]==1)
+                {
+                    return content[i];
+                }
+            }
+            throw new ArgumentException("input parameter doesn't contain non-repeat char!");
         }
 
-
+        /// <summary>
+        /// 1   2   3   4
+        /// 12  13  14  5
+        /// 11  16  15  6 
+        /// 10  9   8   7
+        /// 
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns></returns>
         static int[,]GetNNSpiralMatrix(int n)
         {
             int[,] a = new int[n, n];
@@ -227,7 +286,16 @@ namespace AlgoSampleCode
                 for (j++, i = i - 1; i > c; i--)
                 { if (o > z) break; a[i, j] = o++; }/* 从下至上的循环 */
                 c++;
-            } 
+            }
+
+            for (i = 0; i < n; i++)
+            {
+                for (j = 0; j < n; j++)
+                {
+                    Console.Write("{0}\t", a[i, j]);
+                }
+                Console.WriteLine();
+            }
             return a;
         }
     }
