@@ -1,0 +1,103 @@
+﻿Coding Questions:
+1.	How the property limited data permission?
+2.	What is boxing and unboxing?
+3.	Description the Reflection usage.
+4.	What is the difference between override and overload?
+
+Testing Questions:
+1.	What is white-box and black-box test.
+2.	What kind of information does a bug require when you file a new one?
+3.	The lifecycle of a bug.
+
+SQL Questions:
+1.	What is Stored Procedure and Trigger?
+2.	How to select the data from 31 to 41, may they are unordered records?
+
+Algorithms:
+1.	Given an input string, reverse the string word by word. 
+For example,
+Given s = "the sky is blue",
+return "blue is sky the". 
+
+
+Meeting 1.
+
+Meeting notes. 
+	通常的面试过程
+	Questions sharing from Dejian
+	会后练习
+	下次会议前的准备
+
+通常的面试过程：
+1.	HR沟通，让面试者放松，面试者也应自我放松；
+2.	一轮面试：自我介绍。提重点，主要职责、获得的成绩，突出自己的贡献。
+提前准备：在之前的工作中哪些地方做得好、不好、可以更好，如实回答，不夸大也不谦虚；说不好的点时要能自圆其说；
+3.	二轮面试：技术。根据简历内容提问，因此写简历时水分不要超过30%；算法题考查代码风格、解决问题及处理异常的能力；候选人提问，提前想好问题，想好要给面试官留下什么样的印象；面试官提前考虑可能会被问到什么问题，注意你的回答代表公司；（50min）
+4.	三轮面试：关于个人性格、职业发展、能力的审查；
+
+Questions sharing from Dejian:
+Coding:
+1.	How the property limited data permission?
+考查点：Property的概念；和Field的区别；
+注意：变换提问方式
+>Property和Field的区别? -- Field可读可写，Property可以定义access control；提问可以引申到作用域public/private/protected；
+>如何设置一个多线程、安全、只读的Object? 
+2.	What is boxing and unboxing?
+考查点：值类型和Object类型的相互转换
+注意：涉及性能问题，解决方案--使用泛型集合；
+3.	Description the Reflection usage.
+考查点：反射的概念；使用反射的优势； -- 已有程序集，通过反射获取到内部成员。Eg: UIAF 加载test case的过程。优点：提高程序的灵活性和扩展性。
+注意：.Net4.0以后，Microsoft新增加了Dynamic技术，Dynamic与Reflection的区别。
+4.	What is the difference between override and overload?
+考查点：重载和重写的概念；-- 重写：重写父类的方法；重载：参数类型和个数不同时使用；
+注意：变换提问方式
+                >C#如何实现面向对象三要素？1.三要素是什么2.多态是override还是overload
+Testing:
+1.	What is white-box and black-box test.
+考查点：黑盒测试与白盒测试。-- 黑盒测试功能；白盒测试代码逻辑。
+2.	What kind of information does a bug require when you file a new one?
+考查点：确认是否真的做过测试，了解报告缺陷应提供的信息。
+3.	The lifecycle of a bug.
+考查点：对缺陷周期的了解，可能扩展到对测试流程的了解。
+注意：（一般不会直接提问）
+1.	算法题写完以后，提问：如果自己测试这段代码，如何设计测试用例；
+2.	给一个场景设计测试用例：输入3个整数，返回一个bool值，测试是否是等腰三角形；-- 会后自己想，test case>20 达标。
+3.	对一个物品进行测试，设计测试用例：手机、打印机等；-- 测试=拆；想办法弄坏；
+4.	考查测试概念：给一个网站，考虑有哪些测试的方面。--功能、性能、UI、Globalization等；正确、异常
+测试登陆窗口时输入俄文；显示的日期格式；（很少有面试者会考虑这些）
+考虑允许的同时在线访问量是多少（一百，一万，一亿），面试官也可作为保留问题追加提问
+5.	作为面试者，设计算法题时考虑，有哪些测试用例会应用到这个算法上，提前想好
+SQL Questions:
+1.	What is Stored Procedure and Trigger?
+存储过程的好处，触发器的用途。
+存储过程：包含SQL代码的程序集，类似函数，客户端给SQL服务器传大量代码时使用；SQL已编译过，所以执行效率高；
+触发器：特殊的存储过程，自动触发的存储过程；执行特定操作（添加、删除）时会触发一些操作。
+2.	How to select the data from 31 to 41, maybe they are unordered records?
+子查询获取数据；
+        Algorithms:
+Given an input string, reverse the string word by word. 
+For example,
+Given s = "the sky is blue",
+return "blue is sky the". 
+注意:
+1.	考虑空字符串、多个空格连在一起的情况；
+2.	不允许使用Split等现有的方法；
+3.	如果不允许使用额外的存储空间，怎样写；
+4.	如果拿到题完全没有思路，怎么办？ --
+先写出异常情况；
+尝试用穷举法解题，写了比没写强；
+向面试官要提示；
+5.	注意与面试官的沟通；
+期望：10min写完
+本题优点：所有人拿到都能写，并且容易写错
+会后练习：
+1.	设计测试用例：输入3个整数，返回一个bool值，测试是否是等腰三角形
+2.	算法解决方案：int转换成string，不使用toString()方法；
+3.	算法解决方案：一个整数数组，长度为n，判断数组中有无重复数字。
+难度一：不考虑空间复杂度，两层循环可解决；
+难度二：一层循环加一个Dictionary解决；
+难度三：一层循环，不用额外存储空间，如何解决。
+下次会议前的准备：
+                面试的问题，期望的回答，有什么陷阱，通常得到的答案，不满意的地方，得到的最好的答案。
+
+

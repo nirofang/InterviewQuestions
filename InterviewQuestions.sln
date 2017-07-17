@@ -123,6 +123,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AlgoBeautyP002_SizeOfTypes"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AlgoBeautyP029_UseOfPointerVar", "AlgoBeautyP29_UseOfPointerVar\AlgoBeautyP29_UseOfPointerVar.vcxproj", "{595B7EE7-0565-4501-AF53-E4E9F6D84D37}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E5C20644-7DA1-4DD3-A6F2-8F49E4CCD77F}"
+	ProjectSection(SolutionItems) = preProject
+		Contents.txt = Contents.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
