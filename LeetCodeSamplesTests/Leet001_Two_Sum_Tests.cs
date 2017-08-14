@@ -39,11 +39,20 @@ namespace LeetCodeSamples.Tests
 
 
         [TestMethod()]
-        public void Two_Sum_n2_Tests()
+        public void Two_Sum_n2_Self_Tests()
         {
-            int[] result = new Leet001_Two_Sum().Two_Sum_n2(new int[] { 1, 2, 3 }, 3);
+            int[] result = new Leet001_Two_Sum().Two_Sum_Self_n2(new int[] { 1, 2, 3 }, 3);
 
             CollectionAssert.AreEqual(result, new int[] { 0, 1 });
         }
+
+        [TestMethod()]
+        public void Two_Sum_dic_n_Self_Tests()
+        {
+            int[] result = new Leet001_Two_Sum().Two_Sum_dic_n_Self(new int[] { 1, 2, 3 }, 3);
+
+            CollectionAssert.AreEqual(result, new int[] { 0, 1 });
+        }
+
     }
 }

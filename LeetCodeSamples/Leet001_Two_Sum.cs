@@ -37,7 +37,7 @@ namespace LeetCodeSamples
             return new int[] { -1, -1 };
         }
 
-        public int[] Two_Sum_n2(int[] nums, int target)
+        public int[] Two_Sum_Self_n2(int[] nums, int target)
         {
             for (int i = 0; i < nums.Length; i++)
             {
@@ -45,11 +45,33 @@ namespace LeetCodeSamples
                 {
                     if (nums[i] + nums[j] == target)
                     {
-                        int[] res = new int[2];
-                        res[0] = i;
-                        res[1] = j;
-                        return res;
+                        return new int[2] { i, j };
                     }
+                }
+            }
+            return null;
+        }
+
+        public int[] Two_Sum_dic_n_Self(int[] nums, int target)
+        {
+            if (nums == null)
+            {
+                throw new ArgumentNullException("nums is null");
+            }
+
+            // Use one val in array to locate the index of another val by dic
+            // key is value, val is index
+            Dictionary<int, int> dic = new Dictionary<int, int>();
+            for (int i = 0; i < nums.Length; i++)
+            {
+                int match = target - nums[i];
+                if (dic.ContainsKey(match))
+                {
+                    return new int[] { dic[match], i };
+                }
+                else
+                {
+                    dic[nums[i]] = i;
                 }
             }
             return null;

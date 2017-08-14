@@ -53,6 +53,11 @@
   <ItemGroup>
     <Compile Include="Leet002_Add_Two_Numbers_Tests.cs" />
     <Compile Include="Leet001_Two_Sum_Tests.cs" />
+    <Compile Include="Leet003_Longest_Substring_Without_Repeating_Characters_Tests.cs" />
+    <Compile Include="Leet004_Median_of_Two_Sorted_Arrays_Tests.cs" />
+    <Compile Include="Leet005_Longest_Palindromic_Substring_Tests.cs" />
+    <Compile Include="Leet006_ZigZag_Conversion_Tests.cs" />
+    <Compile Include="Leet007_Reverse_Integer_Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
