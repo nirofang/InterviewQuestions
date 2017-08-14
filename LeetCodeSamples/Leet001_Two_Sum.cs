@@ -8,7 +8,7 @@ namespace LeetCodeSamples
 {
     public class Leet001_Two_Sum
     {
-        public int[] TwoSum(int[] nums, int target)
+        public int[] Two_Sum_dic_n(int[] nums, int target)
         {
             if (nums == null)
             {
@@ -37,7 +37,7 @@ namespace LeetCodeSamples
             return new int[] { -1, -1 };
         }
 
-        public int[] TwoSum2(int[] nums, int target)
+        public int[] Two_Sum_n2(int[] nums, int target)
         {
             for (int i = 0; i < nums.Length; i++)
             {

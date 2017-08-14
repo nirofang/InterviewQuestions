@@ -51,8 +51,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Leet001_Add_Two_NumbersTests.cs" />
-    <Compile Include="Leet001_Two_SumTests.cs" />
+    <Compile Include="Leet002_Add_Two_Numbers_Tests.cs" />
+    <Compile Include="Leet001_Two_Sum_Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
