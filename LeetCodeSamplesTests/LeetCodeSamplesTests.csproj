@@ -58,6 +58,15 @@
     <Compile Include="Leet005_Longest_Palindromic_Substring_Tests.cs" />
     <Compile Include="Leet006_ZigZag_Conversion_Tests.cs" />
     <Compile Include="Leet007_Reverse_Integer_Tests.cs" />
+    <Compile Include="Leet008_String_to_Integer_atoi_Tests.cs" />
+    <Compile Include="Leet009_Palindrome_Number_Tests.cs" />
+    <Compile Include="Leet010_Regular_Expression_Matching_Tests.cs" />
+    <Compile Include="Leet011_Container_With_Most_Water_Tests.cs" />
+    <Compile Include="Leet012_Integer_to_Roman_Tests.cs" />
+    <Compile Include="Leet013_Roman_to_Integer_Tests.cs" />
+    <Compile Include="Leet014_Longest_Common_Prefix_Tests.cs" />
+    <Compile Include="Leet015_3Sum_Tests.cs" />
+    <Compile Include="Leet016_3Sum_Closest_Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

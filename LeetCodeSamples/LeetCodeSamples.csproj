@@ -49,6 +49,15 @@
     <Compile Include="Leet005_Longest_Palindromic_Substring.cs" />
     <Compile Include="Leet006_ZigZag_Conversion.cs" />
     <Compile Include="Leet007_Reverse_Integer.cs" />
+    <Compile Include="Leet008_String_to_Integer_atoi.cs" />
+    <Compile Include="Leet009_Palindrome_Number.cs" />
+    <Compile Include="Leet010_Regular_Expression_Matching.cs" />
+    <Compile Include="Leet011_Container_With_Most_Water.cs" />
+    <Compile Include="Leet012_Integer_to_Roman.cs" />
+    <Compile Include="Leet013_Roman_to_Integer.cs" />
+    <Compile Include="Leet014_Longest_Common_Prefix.cs" />
+    <Compile Include="Leet015_3Sum.cs" />
+    <Compile Include="Leet016_3Sum_Closest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

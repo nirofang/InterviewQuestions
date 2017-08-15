@@ -74,7 +74,12 @@ namespace AlgoSampleCode
             //{
             //    loosersLst.Add(false);
             //}
+
+
             bool[] loosers = Enumerable.Repeat<bool>(false, n).ToArray();
+            // t: index to loop in circle
+            // s: sum the number of not picked persons
+            // l: totoal number of losers that been kicked out
             int t = 0, s = 0, l = 0;
             do
             {
