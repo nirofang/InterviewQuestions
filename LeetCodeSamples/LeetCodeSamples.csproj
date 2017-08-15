@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataStruct\ListNode.cs" />
     <Compile Include="Leet001_Two_Sum.cs" />
     <Compile Include="Leet002_Add_Two_Numbers .cs" />
     <Compile Include="Leet003_Longest_Substring_Without_Repeating_Characters.cs" />
@@ -58,6 +59,14 @@
     <Compile Include="Leet014_Longest_Common_Prefix.cs" />
     <Compile Include="Leet015_3Sum.cs" />
     <Compile Include="Leet016_3Sum_Closest.cs" />
+    <Compile Include="Leet017_Letter_Combinations_of_a_Phone_Number.cs" />
+    <Compile Include="Leet018_4Sum.cs" />
+    <Compile Include="Leet019_Remove_Nth_Node_From_End_of_List .cs" />
+    <Compile Include="Leet020_Valid_Parentheses.cs" />
+    <Compile Include="Leet021_Merge_Two_Sorted_Lists.cs" />
+    <Compile Include="Leet022_Generate_Parentheses.cs" />
+    <Compile Include="Leet023_Merge_k Sorted_Lists.cs" />
+    <Compile Include="Leet026_Remove_Duplicates_from_Sorted_Array.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

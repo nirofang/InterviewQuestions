@@ -67,7 +67,15 @@
     <Compile Include="Leet014_Longest_Common_Prefix_Tests.cs" />
     <Compile Include="Leet015_3Sum_Tests.cs" />
     <Compile Include="Leet016_3Sum_Closest_Tests.cs" />
+    <Compile Include="Leet017_Letter_Combinations_of_a_Phone_Number_Tests.cs" />
+    <Compile Include="Leet018_4Sum_Tests.cs" />
+    <Compile Include="Leet019_Remove_Nth_Node_From_End_of_List_Tests.cs" />
+    <Compile Include="Leet020_Valid_Parentheses_Tests.cs" />
+    <Compile Include="Leet021_Merge_Two_Sorted_Lists_Tests.cs" />
+    <Compile Include="Leet022_Generate_Parentheses_Tests.cs" />
+    <Compile Include="Leet026_Remove_Duplicates_from_Sorted_Array_Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\CollOp.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LeetCodeSamples\LeetCodeSamples.csproj">
