@@ -97,6 +97,12 @@
     <Compile Include="Leet075_Sort_Colors.cs" />
     <Compile Include="Leet076_Minimum_Window_Substring.cs" />
     <Compile Include="Leet078_Subsets.cs" />
+    <Compile Include="Leet079_Word_Search.cs" />
+    <Compile Include="Leet081_Search_in_Rotated_Sorted_Array_II.cs" />
+    <Compile Include="Leet084_Largest_Rectangle_in_Histogram.cs" />
+    <Compile Include="Leet087_Scramble_String.cs" />
+    <Compile Include="Leet088_Merge_Sorted_Array.cs" />
+    <Compile Include="Leet090_Subsets_II.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
