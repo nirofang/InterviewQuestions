@@ -74,6 +74,27 @@
     <Compile Include="Leet021_Merge_Two_Sorted_Lists_Tests.cs" />
     <Compile Include="Leet022_Generate_Parentheses_Tests.cs" />
     <Compile Include="Leet026_Remove_Duplicates_from_Sorted_Array_Tests.cs" />
+    <Compile Include="Leet027_Remove_Element_Tests.cs" />
+    <Compile Include="Leet028_Implement_strStr_Tests.cs" />
+    <Compile Include="Leet030_Substring_with_Concatenation_of_All_Words_Tests.cs" />
+    <Compile Include="Leet031_Next_Permutation_Tests.cs" />
+    <Compile Include="Leet032_Longest_Valid_Parentheses_Tests.cs" />
+    <Compile Include="Leet033_Search_in_Rotated_Sorted_Array_Tests.cs" />
+    <Compile Include="Leet034_Search_for_a_Range_Tests.cs" />
+    <Compile Include="Leet050_Pow_x_n_Tests.cs" />
+    <Compile Include="Leet053_Maximum_Subarray_Tests.cs" />
+    <Compile Include="Leet054_Spiral_Matrix_Tests.cs" />
+    <Compile Include="Leet055_Jump_Game_Tests.cs" />
+    <Compile Include="Leet056_Merge_Intervals_Tests.cs" />
+    <Compile Include="Leet057_Insert_Interval_Tests.cs" />
+    <Compile Include="Leet058_Length_of_Last_Word_Tests.cs" />
+    <Compile Include="Leet059_Spiral_Matrix_II_Tests.cs" />
+    <Compile Include="Leet062_Unique_Paths_Tests.cs" />
+    <Compile Include="Leet063_Unique_Paths_II_Tests.cs" />
+    <Compile Include="Leet064_Minimum_Path_Sum_Tests.cs" />
+    <Compile Include="Leet065_Valid_Number_Tests.cs" />
+    <Compile Include="Leet066_Plus_One_Tests.cs" />
+    <Compile Include="Leet067_Add_Binary_Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Util\CollOp.cs" />
   </ItemGroup>
