@@ -15,6 +15,7 @@
     <ProjectGuid>{B494D151-C9FC-479E-B771-05A64BF42B92}</ProjectGuid>
     <RootNamespace>PrintTreeFromTopToBottom</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">

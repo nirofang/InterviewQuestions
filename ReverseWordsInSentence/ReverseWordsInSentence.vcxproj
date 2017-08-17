@@ -15,6 +15,7 @@
     <ProjectGuid>{50DC45E4-90F6-4C28-98F6-F0D17AAC1B90}</ProjectGuid>
     <RootNamespace>ReverseWordsInSentence</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">

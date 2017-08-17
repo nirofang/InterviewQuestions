@@ -15,6 +15,7 @@
     <ProjectGuid>{2D467FD9-8F5F-4648-A4DB-1E9C866DDDA7}</ProjectGuid>
     <RootNamespace>FindInPartiallySortedMatrix</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">

@@ -15,6 +15,7 @@
     <ProjectGuid>{A1BD3DD0-30F3-4F59-B9CB-FC0DF1C8AC55}</ProjectGuid>
     <RootNamespace>GreatestSumOfSubarrays</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">

@@ -15,6 +15,7 @@
     <ProjectGuid>{FF6C14C4-C1DF-47BD-9DF8-E6D7343311A7}</ProjectGuid>
     <RootNamespace>Accumulate</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">

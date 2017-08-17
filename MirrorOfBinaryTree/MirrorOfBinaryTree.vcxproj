@@ -15,6 +15,7 @@
     <ProjectGuid>{4FDFB2AE-412C-4124-A4F8-823EC382D8AA}</ProjectGuid>
     <RootNamespace>MirrorOfBinaryTree</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">

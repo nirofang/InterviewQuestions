@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{595B7EE7-0565-4501-AF53-E4E9F6D84D37}</ProjectGuid>
     <RootNamespace>AlgoBeautyP29_UseOfPointerVar</RootNamespace>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
     <ProjectName>AlgoBeauty_P029_UseOfPointerVar</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

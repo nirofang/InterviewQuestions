@@ -15,6 +15,7 @@
     <ProjectGuid>{5ED48BF9-F9EF-4D6D-AF6B-5A9EA3B2B402}</ProjectGuid>
     <RootNamespace>UglyNumber</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">

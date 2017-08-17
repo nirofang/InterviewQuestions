@@ -15,6 +15,7 @@
     <ProjectGuid>{16C5480C-890D-4D69-997F-10264880A663}</ProjectGuid>
     <RootNamespace>SquenceOfBST</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
