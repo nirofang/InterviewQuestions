@@ -95,6 +95,14 @@
     <Compile Include="Leet065_Valid_Number_Tests.cs" />
     <Compile Include="Leet066_Plus_One_Tests.cs" />
     <Compile Include="Leet067_Add_Binary_Tests.cs" />
+    <Compile Include="Leet068_Text_Justification_Tests.cs" />
+    <Compile Include="Leet071_Simplify_Path_Tests.cs" />
+    <Compile Include="Leet072_Edit_Distance_Tests.cs" />
+    <Compile Include="Leet073_Set_Matrix_Zeroes_Tests.cs" />
+    <Compile Include="Leet074_Search_a_2D_Matrix_Tests.cs" />
+    <Compile Include="Leet075_Sort_Colors_Tests.cs" />
+    <Compile Include="Leet076_Minimum_Window_Substring_Tests.cs" />
+    <Compile Include="Leet078_Subsets_Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Util\CollOp.cs" />
   </ItemGroup>

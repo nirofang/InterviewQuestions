@@ -89,6 +89,14 @@
     <Compile Include="Leet065_Valid_Number.cs" />
     <Compile Include="Leet066_Plus_One.cs" />
     <Compile Include="Leet067_Add_Binary.cs" />
+    <Compile Include="Leet068_Text_Justification.cs" />
+    <Compile Include="Leet071_Simplify_Path.cs" />
+    <Compile Include="Leet072_Edit_Distance.cs" />
+    <Compile Include="Leet073_Set_Matrix_Zeroes.cs" />
+    <Compile Include="Leet074_Search_a_2D_Matrix.cs" />
+    <Compile Include="Leet075_Sort_Colors.cs" />
+    <Compile Include="Leet076_Minimum_Window_Substring.cs" />
+    <Compile Include="Leet078_Subsets.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
