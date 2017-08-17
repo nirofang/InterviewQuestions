@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataStruct\Interval.cs" />
     <Compile Include="DataStruct\ListNode.cs" />
     <Compile Include="Leet001_Two_Sum.cs" />
     <Compile Include="Leet002_Add_Two_Numbers .cs" />
@@ -67,13 +68,6 @@
     <Compile Include="Leet022_Generate_Parentheses.cs" />
     <Compile Include="Leet023_Merge_k Sorted_Lists.cs" />
     <Compile Include="Leet026_Remove_Duplicates_from_Sorted_Array.cs" />
-    <Compile Include="Leet027_Remove_Element.cs" />
-    <Compile Include="Leet028_Implement_strStr.cs" />
-    <Compile Include="Leet030_Substring_with_Concatenation_of_All_Words.cs" />
-    <Compile Include="Leet031_Next_Permutation.cs" />
-    <Compile Include="Leet032_Longest_Valid_Parentheses.cs" />
-    <Compile Include="Leet033_Search_in_Rotated_Sorted_Array.cs" />
-    <Compile Include="Leet034_Search_for_a_Range.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
