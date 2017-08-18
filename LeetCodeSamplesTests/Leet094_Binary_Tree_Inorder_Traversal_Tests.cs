@@ -16,9 +16,18 @@ namespace LeetCodeSamples.Tests
         public void InorderTraversal_Test()
         {
             TreeNode node= new TreeNode();
-            var tree = node.CreateTree(new int[] { 3, 2, 3 });
+            var tree = node.CreateTree(new string[] { "3", "2", "1", "#",  "6"});
             var result = new Leet094_Binary_Tree_Inorder_Traversal().InorderTraversal(tree);
-            CollectionAssert.AreEqual(result.ToArray(), new int[] { 2, 3, 3 });
+            CollectionAssert.AreEqual(result.ToArray(), new int[] {1, 6, 2, 3 });
+
+            tree = node.CreateTree(new string[] { "3", "2", "1", "#", "#", "6" });
+            result = new Leet094_Binary_Tree_Inorder_Traversal().InorderTraversal(tree);
+            CollectionAssert.AreEqual(result.ToArray(), new int[] { 1, 2, 6, 3 });
+
+            var tree2 = node.CreateTree2(new string[] { "3", "2", "1", "#", "#", "6" });
+            var result2 = new Leet094_Binary_Tree_Inorder_Traversal().InorderTraversal(tree2);
+            CollectionAssert.AreEqual(result2.ToArray(), new int[] { 1, 2, 6, 3 });
+
 
         }
     }

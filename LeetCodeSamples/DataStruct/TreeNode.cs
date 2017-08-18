@@ -9,33 +9,90 @@ namespace LeetCodeSamples.DataStruct
     public class TreeNode
     {
         public int val;
-        public TreeNode left;
-        public TreeNode right;
+        public TreeNode left = null;
+        public TreeNode right = null;
 
         public TreeNode()
         {
         }
 
+        public TreeNode(string x) { val = int.Parse(x); }
+
         public TreeNode(int x) { val = x; }
 
 
-        public TreeNode CreateTree(int[] x)
+        public TreeNode CreateTree(string[] vals)
         {
-            if (x.Length == 0)
+            
+            if (vals==null || vals.Length == 0)
             {
                 return null;
             }
-
-            if (x.Length == 3)
+            if (vals[0] == "#")
             {
-                TreeNode n1 = new TreeNode(x[0]);
-                n1.left = new TreeNode(x[1]);
-                n1.right = new TreeNode(x[2]);
-                return n1;
+                return null;
             }
+            
+            TreeNode curNode = new TreeNode(vals[0]);
+            int index = 1;
+            CreateTreeNode(curNode, vals,ref index);
 
-            return new TreeNode(x[0]);
+            return curNode;
 
         }
+
+        TreeNode CreateTreeNode(TreeNode prevNode, string[] vals,ref int index)
+        {
+            
+            if(index == vals.Length || vals[index] == "#")
+            {
+                return null;
+            }
+            prevNode.left = new TreeNode(vals[index]);
+            TreeNode curNode = prevNode.left;
+            index++;
+            CreateTreeNode(curNode, vals, ref index);
+            index++;
+
+            if (index >= vals.Length || vals[index] == "#")
+            {
+                return null;
+            }
+            curNode.right = new TreeNode(vals[index]);
+            index++;
+            CreateTreeNode(curNode.right, vals, ref index);
+
+            return prevNode;
+        }
+
+        public TreeNode CreateTree2(string[] vals)
+        {
+            TreeNode root = null;
+            int index = 0;
+            CreateTreeNode2(ref root, vals, ref index);
+
+            return root;
+
+        }
+
+
+        void CreateTreeNode2(ref TreeNode prevNode, string[] vals, ref int index)
+        {
+
+            if (index >= vals.Length || vals[index] == "#")
+            {
+                return;
+            }
+            if (prevNode == null)
+            {
+                prevNode = new TreeNode(vals[index]);
+                index++;
+                CreateTreeNode2(ref prevNode.left, vals, ref index);
+                index++;
+                CreateTreeNode2(ref prevNode.right, vals, ref index);
+            } 
+            return;
+        }
+
     }
 }
