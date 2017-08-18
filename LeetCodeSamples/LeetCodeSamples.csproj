@@ -107,6 +107,12 @@
     <Compile Include="Leet091_Decode_Ways.cs" />
     <Compile Include="Leet093_Restore_IP_Addresses.cs" />
     <Compile Include="Leet094_Binary_Tree_Inorder_Traversal.cs" />
+    <Compile Include="Leet097_Interleaving_String.cs" />
+    <Compile Include="Leet105_Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal.cs" />
+    <Compile Include="Leet106_Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal.cs" />
+    <Compile Include="Leet115_Distinct_Subsequences.cs" />
+    <Compile Include="Leet119_Pascals_Triangle_II.cs" />
+    <Compile Include="Leet120_Triangle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
