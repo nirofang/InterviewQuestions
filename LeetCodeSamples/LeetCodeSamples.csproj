@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="DataStruct\Interval.cs" />
     <Compile Include="DataStruct\ListNode.cs" />
+    <Compile Include="DataStruct\TreeNode.cs" />
     <Compile Include="Leet001_Two_Sum.cs" />
     <Compile Include="Leet002_Add_Two_Numbers .cs" />
     <Compile Include="Leet003_Longest_Substring_Without_Repeating_Characters.cs" />
@@ -103,6 +104,9 @@
     <Compile Include="Leet087_Scramble_String.cs" />
     <Compile Include="Leet088_Merge_Sorted_Array.cs" />
     <Compile Include="Leet090_Subsets_II.cs" />
+    <Compile Include="Leet091_Decode_Ways.cs" />
+    <Compile Include="Leet093_Restore_IP_Addresses.cs" />
+    <Compile Include="Leet094_Binary_Tree_Inorder_Traversal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
