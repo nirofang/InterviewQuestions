@@ -27,10 +27,17 @@ namespace LeetCodeSamples.Tests
         [TestMethod()]
         public void Convert_Test()
         {
-            string result = new Leet006_ZigZag_Conversion().Convert("PAYPALISHIRING", 3);
+            string result = new Leet006_ZigZag_Conversion().ZigZag_Convert("PAYPALISHIRING", 3);
             Assert.AreEqual(result, "PAHNAPLSIIGYIR");
 
-            result = new Leet006_ZigZag_Conversion().Convert("PAYPALISHIRING", 4);
+            result = new Leet006_ZigZag_Conversion().ZigZag_Convert("PAYPALISHIRING", 4);
+            Assert.AreEqual(result, "PINALSIGYAHRPI");
+
+
+            result = new Leet006_ZigZag_Conversion().ZigZag_Convert_Own("PAYPALISHIRING", 3);
+            Assert.AreEqual(result, "PAHNAPLSIIGYIR");
+
+            result = new Leet006_ZigZag_Conversion().ZigZag_Convert_Own("PAYPALISHIRING", 4);
             Assert.AreEqual(result, "PINALSIGYAHRPI");
         }
     }

@@ -73,6 +73,7 @@
     <Compile Include="Leet020_Valid_Parentheses_Tests.cs" />
     <Compile Include="Leet021_Merge_Two_Sorted_Lists_Tests.cs" />
     <Compile Include="Leet022_Generate_Parentheses_Tests.cs" />
+    <Compile Include="Leet024_Swap_Nodes_in_Pairs_Tests.cs" />
     <Compile Include="Leet026_Remove_Duplicates_from_Sorted_Array_Tests.cs" />
     <Compile Include="Leet027_Remove_Element_Tests.cs" />
     <Compile Include="Leet028_Implement_strStr_Tests.cs" />

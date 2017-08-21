@@ -43,5 +43,42 @@ namespace LeetCodeSamples
 
             return longestStr;
         }
+
+        public string LongestCommonPrefix_Own(string[] strs)
+        {
+            if (strs == null)
+            {
+                return null;
+            }
+            if (strs.Length == 0)
+            {
+                return "";
+            }
+            if (strs.Length == 1)
+            {
+                return strs[0];
+            }
+
+            string word = strs[0];
+            int prefixLength = word.Length;
+
+            for (int i = 1; i < strs.Length; i++)
+            {
+                string nextword = strs[i];
+                prefixLength = Math.Min(prefixLength, nextword.Length);
+                for (int j = 0; j < prefixLength; j++)
+                {
+                    if (word[j] != nextword[j])
+                    {
+                        prefixLength = j;
+                        break;
+                    }
+                }
+            }
+            return word.Substring(0, prefixLength);
+        }
     }
+
+
+    
 }

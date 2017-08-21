@@ -68,6 +68,7 @@
     <Compile Include="Leet021_Merge_Two_Sorted_Lists.cs" />
     <Compile Include="Leet022_Generate_Parentheses.cs" />
     <Compile Include="Leet023_Merge_k Sorted_Lists.cs" />
+    <Compile Include="Leet024_Swap_Nodes_in_Pairs.cs" />
     <Compile Include="Leet026_Remove_Duplicates_from_Sorted_Array.cs" />
     <Compile Include="Leet027_Remove_Element.cs" />
     <Compile Include="Leet028_Implement_strStr.cs" />

@@ -36,7 +36,8 @@ namespace LeetCodeSamples
 
             if (result > int.MaxValue || result < int.MinValue)
             {
-                throw new ArgumentOutOfRangeException("result out of int range");
+                //throw new ArgumentOutOfRangeException("result out of int range");
+                return 0;
             }
             return (int)result;
         }

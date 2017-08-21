@@ -54,11 +54,11 @@ namespace LeetCodeSamples.Tests
             Assert.AreEqual(result, newac);
 
 
-            ListNode result_self = new Leet002_Add_Two_Numbers().Add_Two_Numbers_Self(a, b);
+            ListNode result_self = new Leet002_Add_Two_Numbers().Add_Two_Numbers_Own(a, b);
 
             Assert.AreEqual(result_self, newc);
 
-            result_self = new Leet002_Add_Two_Numbers().Add_Two_Numbers_Self(a, newc);
+            result_self = new Leet002_Add_Two_Numbers().Add_Two_Numbers_Own(a, newc);
             Assert.AreEqual(result_self, newac);
         }
     }

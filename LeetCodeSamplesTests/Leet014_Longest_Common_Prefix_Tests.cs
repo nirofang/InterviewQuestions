@@ -19,6 +19,15 @@ namespace LeetCodeSamples.Tests
             Assert.AreEqual(new Leet014_Longest_Common_Prefix().LongestCommonPrefix(new string[] { "abcdefg", "abcdefg", "abcdefg" }), "abcdefg");
 
             Assert.AreEqual(new Leet014_Longest_Common_Prefix().LongestCommonPrefix(new string[] { "abcdefgzxc", "abcdefgzze", "abcdefg" }), "abcdefg");
+
+
+            Assert.AreEqual(new Leet014_Longest_Common_Prefix().LongestCommonPrefix_Own(new string[] { "abcdefg", "abczzc2", "abc93dfjaj" }), "abc");
+
+            Assert.AreEqual(new Leet014_Longest_Common_Prefix().LongestCommonPrefix_Own(new string[] { "abcdefg", "abcdefg", "abcdefg" }), "abcdefg");
+
+            Assert.AreEqual(new Leet014_Longest_Common_Prefix().LongestCommonPrefix_Own(new string[] { "abcdefgzxc", "abcdefgzze", "abcdefg" }), "abcdefg");
+
+
         }
     }
 }

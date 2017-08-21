@@ -37,5 +37,31 @@ namespace LeetCodeSamples
             }
             return num;
         }
+
+        public int Length_Of_Longest_Substring_Own(string s)
+        {
+            if (string.IsNullOrEmpty(s))
+            {
+                return 0;
+            }
+
+            int start = 0;
+            int max = 1;
+            for (int i = 1; i < s.Length; i++)
+            {
+                char c = s[i];
+                int index = s.IndexOf(c, start, i - start);
+                if (index >= 0)
+                {
+                    start = index + 1;
+                }
+                else
+                {
+                    max = Math.Max(max, i - start + 1);
+                }
+            }
+            return max;
+        }
     }
+    
 }

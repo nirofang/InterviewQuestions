@@ -88,7 +88,7 @@ namespace LeetCodeSamples
         }
 
 
-        public ListNode Add_Two_Numbers_Self(ListNode l1, ListNode l2)
+        public ListNode Add_Two_Numbers_Own(ListNode l1, ListNode l2)
         {
             int carry = 0;
             int sum = 0;
@@ -120,7 +120,7 @@ namespace LeetCodeSamples
 
             while (l != null)
             {
-                sum = l1.val + carry;
+                sum = l.val + carry;
                 carry = sum / 10;
                 sum = sum % 10;
                 prev.next = new ListNode(sum);
