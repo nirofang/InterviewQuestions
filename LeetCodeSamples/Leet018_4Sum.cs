@@ -67,5 +67,55 @@ namespace LeetCodeSamples
             }
             return list;
         }
+
+
+        public IList<IList<int>> FourSum_Own(int[] nums, int target)
+        {
+            IList<IList<int>> res = new List<IList<int>>();
+            if (nums == null || nums.Length < 4) return res;
+            Array.Sort(nums);
+
+
+            for (int i = 0; i < nums.Length - 3; i++)
+            {
+                if (i > 0 && nums[i] == nums[i - 1])
+                {
+                    continue;
+                }
+                for(int j = i +1; j<nums.Length -2; j++)
+                {
+                    if (j > i + 1&& nums[j] == nums[j-1])
+                    {
+                        continue;
+                    }
+                    int newTar = target - nums[i] - nums[j];
+                    int l = j + 1;
+                    int r = nums.Length - 1;
+                    while (l < r)
+                    {
+                        if (l > j + 1 && nums[l] == nums[l - 1])
+                        {
+                            l++;
+                            continue;
+                        }
+                        if (r < nums.Length - 1 && nums[r] == nums[r + 1])
+                        {
+                            r--;
+                            continue;
+                        }
+                        int sum = nums[l] + nums[r];
+                        if (sum < newTar) l++;
+                        else if (sum > newTar) r--;
+                        else
+                        {
+                            res.Add(new List<int> { nums[i], nums[j], nums[l], nums[r] });
+                            l++;
+                            r--;
+                        }
+                    }
+                }
+            }
+            return res;
+        }
     }
 }

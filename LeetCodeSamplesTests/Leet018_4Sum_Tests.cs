@@ -18,8 +18,14 @@ namespace LeetCodeSamples.Tests
         {
             var result = new Leet018_4Sum().FourSum(new int[] { 1, 0, -1, 0, -2, 2 }, 0);
             Assert.IsTrue(result.Contains(new int[] { -1, 0, 0, 1 }, ColOp.comp));
-;           Assert.IsTrue(result.Contains(new int[] { -2, -1, 1, 2 }, ColOp.comp));
+            Assert.IsTrue(result.Contains(new int[] { -2, -1, 1, 2 }, ColOp.comp));
             Assert.IsTrue(result.Contains(new int[] { -2, 0, 0, 2 }, ColOp.comp));
+
+            result = new Leet018_4Sum().FourSum_Own(new int[] { 1, 0, -1, 0, -2, 2 }, 0);
+            Assert.IsTrue(result.Contains(new int[] { -1, 0, 0, 1 }, ColOp.comp));
+            Assert.IsTrue(result.Contains(new int[] { -2, -1, 1, 2 }, ColOp.comp));
+            Assert.IsTrue(result.Contains(new int[] { -2, 0, 0, 2 }, ColOp.comp));
+
         }
 
 

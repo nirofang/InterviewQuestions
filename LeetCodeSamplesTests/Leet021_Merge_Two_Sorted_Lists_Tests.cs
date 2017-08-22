@@ -19,6 +19,18 @@ namespace LeetCodeSamples.Tests
             ListNode l2 = new ListNode(new int[] { 1, 3, 8, 9, 10 });
             ListNode result = new ListNode(new int[] { 1, 3, 5, 7, 8, 9, 9, 10});
             Assert.AreEqual(result, new Leet021_Merge_Two_Sorted_Lists().MergeTwoLists(l1, l2));
+
+            l1 = new ListNode(new int[] { 5, 7, 9 });
+            l2 = new ListNode(new int[] { 1, 3, 8, 9, 10 });
+            result = new ListNode(new int[] { 1, 3, 5, 7, 8, 9, 9, 10 });
+            Assert.AreEqual(result, new Leet021_Merge_Two_Sorted_Lists().MergeTwoLists_Own(l1, l2));
+
+
+            l1 = new ListNode(new int[] { 5, 7, 9 });
+            l2 = new ListNode(new int[] { 1, 3, 8, 9, 10 });
+            result = new ListNode(new int[] { 1, 3, 5, 7, 8, 9, 9, 10 });
+            Assert.AreEqual(result, new Leet021_Merge_Two_Sorted_Lists().MergeTwoLists_Own2(l1, l2));
+
         }
     }
 }

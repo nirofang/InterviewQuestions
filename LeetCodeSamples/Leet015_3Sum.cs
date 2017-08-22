@@ -59,5 +59,62 @@ namespace LeetCodeSamples
             return list;
         }
 
+
+        public IList<IList<int>> ThreeSum_Own(int[] nums)
+        {
+            IList<IList<int>> res = new List<IList<int>>();
+            Array.Sort(nums);
+
+            for (int i = 0; i < nums.Length - 2; i++)
+            {
+                if (i > 0 && nums[i] == nums[i - 1])
+                {
+                    continue;
+                }
+                if (nums[i] > 0)
+                {
+                    break;
+                }
+
+                int j = i + 1;
+                int k = nums.Length - 1;
+
+                while (j < k)
+                {
+                    if (j > i + 1 && nums[j] == nums[j - 1])
+                    {
+                        j++;
+                        continue;
+                    }
+
+
+                    if (nums[i] + nums[j] > 0)
+                    {
+                        break;
+                    }
+
+                    if (nums[i] + nums[j] + nums[k] < 0)
+                    {
+                        j++;
+                    }
+                    else if (nums[i] + nums[j] + nums[k] > 0)
+                    {
+                        k--;
+                    }
+                    else
+                    {
+                        List<int> tripples = new List<int>();
+                        tripples.Add(nums[i]);
+                        tripples.Add(nums[j]);
+                        tripples.Add(nums[k]);
+                        res.Add(tripples);
+                        i++;
+                        k--;
+                    }
+                }
+
+            }
+            return res;
+        }
     }
 }

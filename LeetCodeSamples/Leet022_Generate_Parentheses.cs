@@ -39,5 +39,24 @@ namespace LeetCodeSamples
                 }
             }
         }
+
+        public IList<string> GenerateParenthesis_Own(int n)
+        {
+            List<string> list = new List<string>();
+            GenerateParenthesis_Own("", 0, 0, n, list);
+            return list;
+        }
+
+        private void GenerateParenthesis_Own(string s, int left, int right, int pair, List<string> list)
+        {
+            if (left == right && left == pair)
+            {
+                list.Add(s);
+            }
+
+            
+
+            throw new NotImplementedException();
+        }
     }
 }

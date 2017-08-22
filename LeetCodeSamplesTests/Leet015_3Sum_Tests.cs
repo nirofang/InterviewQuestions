@@ -21,7 +21,15 @@ namespace LeetCodeSamples.Tests
             var result = new Leet015_3Sum().ThreeSum(new int[] { -1, 0, 1, 2, -1, -4 });
 
             CollectionAssert.AreEqual(result[0].ToArray(), new int[] { -1, -1, 2 });
-            CollectionAssert.AreEqual(result[1].ToArray(), new List<int> { -1, 0, 1 });
+            CollectionAssert.AreEqual(result[1].ToList(), new List<int> { -1, 0, 1 });
+
+            //CollectionAssert.AreEqual(result.Select(x=>x.ToList()).ToList(), 
+            //    new List<List<int>> { new List<int>{ -1, 0, 1 }, new List<int> { -1, 0, 1 } });
+
+            result = new Leet015_3Sum().ThreeSum_Own(new int[] { -1, 0, 1, 2, -1, -4 });
+
+            CollectionAssert.AreEqual(result[0].ToArray(), new int[] { -1, -1, 2 });
+            CollectionAssert.AreEqual(result[1].ToList(), new List<int> { -1, 0, 1 });
         }
     }
 }

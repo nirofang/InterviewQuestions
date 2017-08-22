@@ -52,5 +52,39 @@ namespace LeetCodeSamples
             else
                 return null;
         }
+
+
+        public ListNode RemoveNthFromEnd_Own(ListNode head, int n)
+        {
+            
+            if (head == null)
+            {
+                return head;
+            }
+            ListNode pre = new ListNode(0);
+            pre.next = head;
+
+            ListNode fast = pre;
+
+            int count = 0;
+            while (fast != null && count < n)
+            {
+                fast = fast.next;
+                count++;
+            }
+            if (fast == null)
+            {
+                return head;
+            }
+            ListNode slow = pre;
+            while(fast.next!= null)
+            {
+                fast = fast.next;
+                slow = slow.next;
+            }
+            slow.next = slow.next.next;
+            return pre.next;
+
+        }
     }
 }

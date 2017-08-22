@@ -61,5 +61,42 @@ namespace LeetCodeSamples
             }
             return closest;
         }
+
+        public int ThreeSumClosest_Own(int[] nums, int target)
+        {
+            int closest = 0;
+            if (nums == null)
+            {
+                return closest;
+            }
+            Array.Sort(nums);
+            for(int i=0; i<nums.Length-2;i++)
+            {
+                int j = i + 1;
+                int k = nums.Length - 1;
+                while(j<k)
+                {
+                    int sum = nums[i] + nums[j] + nums[k];
+                    if (Math.Abs(target - sum) < Math.Abs(target - closest))
+                    {
+                        closest = sum;
+                        if(closest == target)
+                        {
+                            return closest;
+                        }
+                    }
+                    if (sum > target)
+                    {
+                        k--;
+                    }
+                    else
+                    {
+                        j++;
+                    }
+
+                }
+            }
+            return closest;
+        }
     }
 }

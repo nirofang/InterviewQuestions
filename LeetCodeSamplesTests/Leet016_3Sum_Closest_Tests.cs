@@ -17,6 +17,9 @@ namespace LeetCodeSamples.Tests
             // -1 1 2
             var result = new Leet016_3Sum_Closest().ThreeSumClosest(new int[] { -1, 0, 1, 2, -1, -4 }, 2);
 
+
+            result = new Leet016_3Sum_Closest().ThreeSumClosest_Own(new int[] { -1, 0, 1, 2, -1, -4 }, 2);
+
         }
     }
 }
