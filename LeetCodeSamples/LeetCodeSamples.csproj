@@ -69,9 +69,11 @@
     <Compile Include="Leet022_Generate_Parentheses.cs" />
     <Compile Include="Leet023_Merge_k Sorted_Lists.cs" />
     <Compile Include="Leet024_Swap_Nodes_in_Pairs.cs" />
+    <Compile Include="Leet025_Reverse_Nodes_in_k_Group.cs" />
     <Compile Include="Leet026_Remove_Duplicates_from_Sorted_Array.cs" />
     <Compile Include="Leet027_Remove_Element.cs" />
     <Compile Include="Leet028_Implement_strStr.cs" />
+    <Compile Include="Leet029_Divide_Two_Integers.cs" />
     <Compile Include="Leet030_Substring_with_Concatenation_of_All_Words.cs" />
     <Compile Include="Leet031_Next_Permutation.cs" />
     <Compile Include="Leet032_Longest_Valid_Parentheses.cs" />

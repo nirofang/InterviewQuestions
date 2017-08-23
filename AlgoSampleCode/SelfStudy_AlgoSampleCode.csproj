@@ -46,6 +46,7 @@
     <Compile Include="Digit\Combinations.cs" />
     <Compile Include="Digit\FindSubset.cs" />
     <Compile Include="Digit\Search.cs" />
+    <Compile Include="Digit\Sort.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

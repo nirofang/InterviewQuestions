@@ -21,7 +21,10 @@ namespace LeetCodeSamples.Tests
   "()(())",
   "()()()"
             };
-            new Leet022_Generate_Parentheses().GenerateParenthesis(4).SequenceEqual(exp);
+            Assert.IsTrue(new Leet022_Generate_Parentheses().GenerateParenthesis(3).SequenceEqual(exp));
+
+
+            Assert.IsTrue(new Leet022_Generate_Parentheses().GenerateParenthesis_Own(3).SequenceEqual(exp));
         }
     }
 }

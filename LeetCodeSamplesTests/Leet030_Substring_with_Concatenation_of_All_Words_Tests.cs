@@ -14,15 +14,14 @@ namespace LeetCodeSamples.Tests
         [TestMethod()]
         public void FindSubstring_Test()
         {
+            var result = new Leet030_Substring_with_Concatenation_of_All_Words().FindSubstring("barfoothefoobarman", new string[] { "foo", "bar" });
+            CollectionAssert.AreEqual(result.ToArray(), new int[] { 0, 9 });
+
 
             // Got the limitation that substring length should be the same = 2
-            var result = new Leet030_Substring_with_Concatenation_of_All_Words().FindSubstring("hello world", new string[] { "el", "o " });
-            CollectionAssert.AreEqual(result.ToArray(), new int[] { 1, 4});
+            result = new Leet030_Substring_with_Concatenation_of_All_Words().FindSubstring("helloknifeworldhelloworld", new string[] { "hello", "world" });
+            CollectionAssert.AreEqual(result.ToArray(), new int[] { 10, 15});
 
-
-            // if substring[1].length != substring[0].length, only first index will return.
-            result = new Leet030_Substring_with_Concatenation_of_All_Words().FindSubstring("hello world", new string[] { "el", "o w" });
-            CollectionAssert.AreEqual(result.ToArray(), new int[] { 1 });
 
         }
     }

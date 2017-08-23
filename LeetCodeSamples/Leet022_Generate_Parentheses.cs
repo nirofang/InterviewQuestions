@@ -49,14 +49,19 @@ namespace LeetCodeSamples
 
         private void GenerateParenthesis_Own(string s, int left, int right, int pair, List<string> list)
         {
-            if (left == right && left == pair)
+            if (left == pair && right == pair)
             {
                 list.Add(s);
+                return;
             }
-
-            
-
-            throw new NotImplementedException();
+            if (left < pair)
+            {
+                GenerateParenthesis_Own(s + "(", left + 1, right, pair, list);
+            }
+            if (right < left)
+            {
+                GenerateParenthesis_Own(s + ")", left, right+1, pair, list);
+            }
         }
     }
 }

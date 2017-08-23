@@ -38,14 +38,16 @@ namespace LeetCodeSamples
                         if (dict2.ContainsKey(w))
                             dict2[w]++;
                         else
-                            dict2.Add(w, 1);
+                            dict2[w]=1;
                         if (dict2[w] > dict[w])
                             break;
                         count++;
                     }
-                    //if (count == j)
-                    if (count > 0)
+                    if (count == j)
+                    //if (count > 0)
+                    {
                         list.Add(i);
+                    }
                 }
             }
 
