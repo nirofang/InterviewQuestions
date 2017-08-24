@@ -16,6 +16,11 @@ namespace LeetCodeSamples.Tests
         {
             var res = new Leet043_Multiply_String().multiplyString("12", "20");
             Assert.AreEqual(res, "240");
+            res = new Leet043_Multiply_String().multiplyString_Web("12", "20");
+            Assert.AreEqual(res, "240");
+
+            
+
         }
     }
 }

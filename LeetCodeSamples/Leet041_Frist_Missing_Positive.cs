@@ -25,7 +25,7 @@ namespace LeetCodeSamples
         }
 
         /// <summary>
-        /// Position of integer n shoudl be n-1 if sorted
+        /// Position of integer n should be n-1 if sorted
         /// correct form [1,2,3,4....#, n]
         /// if not in position swap it with a[a[p]-1]
         /// </summary>

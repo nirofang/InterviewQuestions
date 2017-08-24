@@ -92,6 +92,8 @@
     <Compile Include="Leet041_Frist_Missing_Positive_Tests.cs" />
     <Compile Include="Leet042_Trapping_Rain_Water_Tests.cs" />
     <Compile Include="Leet043_Multiply_String_Tests.cs" />
+    <Compile Include="Leet044_Wildcard_Matching_Tests.cs" />
+    <Compile Include="Leet045_Jump_Game_II_Tests.cs" />
     <Compile Include="Leet050_Pow_x_n_Tests.cs" />
     <Compile Include="Leet053_Maximum_Subarray_Tests.cs" />
     <Compile Include="Leet054_Spiral_Matrix_Tests.cs" />

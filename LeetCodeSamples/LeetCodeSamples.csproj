@@ -87,6 +87,8 @@
     <Compile Include="Leet041_Frist_Missing_Positive.cs" />
     <Compile Include="Leet042_Trapping_Rain_Water.cs" />
     <Compile Include="Leet043_Multiply_String.cs" />
+    <Compile Include="Leet044_Wildcard_Matching.cs" />
+    <Compile Include="Leet045_Jump_Game_II.cs" />
     <Compile Include="Leet050_Pow_x_n.cs" />
     <Compile Include="Leet053_Maximum_Subarray.cs" />
     <Compile Include="Leet054_Spiral_Matrix.cs" />
