@@ -79,6 +79,14 @@
     <Compile Include="Leet032_Longest_Valid_Parentheses.cs" />
     <Compile Include="Leet033_Search_in_Rotated_Sorted_Array.cs" />
     <Compile Include="Leet034_Search_for_a_Range.cs" />
+    <Compile Include="Leet035_Search_Insert_Position.cs" />
+    <Compile Include="Leet036_Valid_Sudoku.cs" />
+    <Compile Include="Leet037_Sudoku_Solver.cs" />
+    <Compile Include="Leet039_Combinational_Sum.cs" />
+    <Compile Include="Leet040_Combinational_Sum_II.cs" />
+    <Compile Include="Leet041_Frist_Missing_Positive.cs" />
+    <Compile Include="Leet042_Trapping_Rain_Water.cs" />
+    <Compile Include="Leet043_Multiply_String.cs" />
     <Compile Include="Leet050_Pow_x_n.cs" />
     <Compile Include="Leet053_Maximum_Subarray.cs" />
     <Compile Include="Leet054_Spiral_Matrix.cs" />
@@ -116,6 +124,7 @@
     <Compile Include="Leet115_Distinct_Subsequences.cs" />
     <Compile Include="Leet119_Pascals_Triangle_II.cs" />
     <Compile Include="Leet120_Triangle.cs" />
+    <Compile Include="Leet038_Count_and_Say.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

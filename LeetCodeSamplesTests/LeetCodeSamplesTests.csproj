@@ -84,6 +84,14 @@
     <Compile Include="Leet032_Longest_Valid_Parentheses_Tests.cs" />
     <Compile Include="Leet033_Search_in_Rotated_Sorted_Array_Tests.cs" />
     <Compile Include="Leet034_Search_for_a_Range_Tests.cs" />
+    <Compile Include="Leet035_Search_Insert_Position_Tests.cs" />
+    <Compile Include="Leet036_Valid_Sudoku_Tests.cs" />
+    <Compile Include="Leet037_Sudoku_Solver_Tests.cs" />
+    <Compile Include="Leet039_Combinational_Sum_Tests.cs" />
+    <Compile Include="Leet040_Combinational_Sum_II_Tests.cs" />
+    <Compile Include="Leet041_Frist_Missing_Positive_Tests.cs" />
+    <Compile Include="Leet042_Trapping_Rain_Water_Tests.cs" />
+    <Compile Include="Leet043_Multiply_String_Tests.cs" />
     <Compile Include="Leet050_Pow_x_n_Tests.cs" />
     <Compile Include="Leet053_Maximum_Subarray_Tests.cs" />
     <Compile Include="Leet054_Spiral_Matrix_Tests.cs" />
@@ -121,6 +129,7 @@
     <Compile Include="Leet115_Distinct_Subsequences_Tests.cs" />
     <Compile Include="Leet119_Pascals_Triangle_II_Tests.cs" />
     <Compile Include="Leet120_Triangle_Tests.cs" />
+    <Compile Include="Leet038_Count_and_Say_Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Util\CollOp.cs" />
   </ItemGroup>

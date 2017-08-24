@@ -53,5 +53,51 @@ namespace LeetCodeSamples
                     return find(nums, mid, end, target);
             }
         }
+
+        public int[] SearchRange_Own(int[] nums, int target)
+        {
+            int[] range = { -1, - 1 };
+            if (nums == null || nums.Length == 0) return range;
+            int index = binarySearch(nums, 0, nums.Length - 1, target);
+            if (index != -1)
+            {
+                int left = index;
+                int right = index;
+                range[0] = left;
+                range[1] = right;
+                while ((left = binarySearch(nums, 0, left - 1,target))!=-1)
+                {
+                    range[0] = left;
+                }
+                while ((right = binarySearch(nums, right + 1, nums.Length-1, target)) != -1)
+                {
+                    range[1] = right;
+                }
+            }
+            return range;
+
+        }
+
+        int binarySearch(int[] nums, int left, int right, int target)
+        {
+            while(left<=right)
+            {
+                int mid = left + (right - left) / 2;
+                if (nums[mid] == target)
+                {
+                    return mid;
+                }
+                else if (nums[mid] > target)
+                {
+                    right = mid - 1;
+                }
+                else
+                {
+                    left = mid + 1;
+                }
+            }
+            return -1;
+        }
+
     }
 }

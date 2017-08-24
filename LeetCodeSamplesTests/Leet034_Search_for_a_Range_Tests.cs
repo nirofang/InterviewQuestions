@@ -18,6 +18,9 @@ namespace LeetCodeSamples.Tests
             var range = new Leet034_Search_for_a_Range().SearchRange(input, 6);
             
             CollectionAssert.AreEqual(range, new int[]{ 4, 5 });
+
+            range = new Leet034_Search_for_a_Range().SearchRange_Own(input, 6);
+            CollectionAssert.AreEqual(range, new int[] { 4, 5 });
         }
     }
 }

@@ -15,21 +15,37 @@ namespace LeetCodeSamples.Tests
         public void Search_Test()
         {
             int[] input = new int[] { 0, 1, 2, 4, 5, 6, 7 };
-            int index = new Leet033_Search_in_Rotated_Sorted_Array().Search(input, 6);
+            int index = new Leet033_Search_in_Rotated_Sorted_Array().Search_Rotate(input, 6);
             Assert.AreEqual(index, 5);
 
             // Found the second 7, because it is a divide and search
             input = new int[] { 4, 5, 7, 7, 0, 1, 2 };
-            index = new Leet033_Search_in_Rotated_Sorted_Array().Search(input, 7);
+            index = new Leet033_Search_in_Rotated_Sorted_Array().Search_Rotate(input, 7);
             Assert.AreEqual(index, 3);
 
 
             input = new int[] { 4, 5, 6, 7, 0, 1, 2 };
-            index = new Leet033_Search_in_Rotated_Sorted_Array().Search(input, 6);
+            index = new Leet033_Search_in_Rotated_Sorted_Array().Search_Rotate(input, 6);
             Assert.AreEqual(index, 2);
 
             //int[] exp = new int[] { 4, 5, 6, 7, 0, 1, 2  };
             //CollectionAssert.AreEqual(input, exp);
+
+
+            input = new int[] { 0, 1, 2, 4, 5, 6, 7 };
+            index = new Leet033_Search_in_Rotated_Sorted_Array().Search_Rotate_Own(input, 6);
+            Assert.AreEqual(index, 5);
+
+            // Found the second 7, because it is a divide and search
+            input = new int[] { 4, 5, 7, 7, 0, 1, 2 };
+            index = new Leet033_Search_in_Rotated_Sorted_Array().Search_Rotate_Own(input, 7);
+            Assert.AreEqual(index, 3);
+
+
+            input = new int[] { 4, 5, 6, 7, 0, 1, 2 };
+            index = new Leet033_Search_in_Rotated_Sorted_Array().Search_Rotate_Own(input, 6);
+            Assert.AreEqual(index, 2);
+
         }
     }
 }
