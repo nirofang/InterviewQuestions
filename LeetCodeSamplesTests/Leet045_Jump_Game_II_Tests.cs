@@ -17,6 +17,12 @@ namespace LeetCodeSamples.Tests
             Assert.IsTrue(Leet045_Jump_Game_II.canJump(new int[] { 2, 3, 1, 1, 4 }, 5));
 
             Assert.IsFalse(Leet045_Jump_Game_II.canJump(new int[] { 3, 2, 1, 0, 4 }, 5));
+
+
+            Assert.IsTrue(Leet045_Jump_Game_II.canJump2(new int[] { 2, 3, 1, 1, 4 }, 5));
+
+            Assert.IsFalse(Leet045_Jump_Game_II.canJump2(new int[] { 3, 2, 1, 0, 4 }, 5));
+
         }
     }
 }
