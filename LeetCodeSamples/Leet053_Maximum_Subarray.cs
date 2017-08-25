@@ -33,5 +33,29 @@ namespace LeetCodeSamples
             }
             return result;
         }
+
+        public int maxSubArray2(int[] A)
+        {
+            if (A == null || A.Length == 0)
+            {
+                return 0;
+            }
+            if(A.Length ==1)
+            {
+                return A[0];
+            }
+            
+            int sum = A[A.Length - 1];
+            int maxSum = sum;
+
+            for (int i = A.Length - 2; i >= 0; i--)
+            {
+                sum = Math.Max(A[i], sum + A[i]);
+                maxSum = Math.Max(maxSum, sum);
+            }
+
+            return maxSum;
+        }
+
     }
 }

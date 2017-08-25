@@ -68,5 +68,62 @@ namespace LeetCodeSamplesTests
 
             return list;
         }
+
+        public List<int> spiralOrder2(int[][] matrix)
+        {
+            List<int> res = new List<int>();
+            if (matrix.Length == 0) return res;
+            int m = matrix.Length, n = matrix[0].Length;
+            // 计算圈数
+            int lvl = (Math.Min(m, n) + 1) / 2;
+            for (int i = 0; i < lvl; i++)
+            {
+                // 计算相对应的该圈最后一行
+                int lastRow = m - i - 1;
+                // 计算相对应的该圈最后一列
+                int lastCol = n - i - 1;
+                // 如果该圈第一行就是最后一行，说明只剩下一行
+                if (i == lastRow)
+                {
+                    for (int j = i; j <= lastCol; j++)
+                    {
+                        res.Add(matrix[i][j]);
+                    }
+                    // 如果该圈第一列就是最后一列，说明只剩下一列
+                }
+                else if (i == lastCol)
+                {
+                    for (int j = i; j <= lastRow; j++)
+                    {
+                        res.Add(matrix[j][i]);
+                    }
+                }
+                else
+                {
+                    // 第一行
+                    for (int j = i; j < lastCol; j++)
+                    {
+                        res.Add(matrix[i][j]);
+                    }
+                    // 最后一列
+                    for (int j = i; j < lastRow; j++)
+                    {
+                        res.Add(matrix[j][lastCol]);
+                    }
+                    // 最后一行
+                    for (int j = lastCol; j > i; j--)
+                    {
+                        res.Add(matrix[lastRow][j]);
+                    }
+                    // 第一列
+                    for (int j = lastRow; j > i; j--)
+                    {
+                        res.Add(matrix[j][i]);
+                    }
+                }
+            }
+            return res;
+        }
+
     }
 }

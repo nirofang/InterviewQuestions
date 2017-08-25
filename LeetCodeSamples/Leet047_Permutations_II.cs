@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LeetCodeSamples
 {
-    public class Leet046_Permutations_II
+    public class Leet047_Permutations_II
     {
         public List<List<int>> permuteUnique(int[] num)
         {

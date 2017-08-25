@@ -90,7 +90,7 @@
     <Compile Include="Leet044_Wildcard_Matching.cs" />
     <Compile Include="Leet045_Jump_Game_II.cs" />
     <Compile Include="Leet046_Permutations.cs" />
-    <Compile Include="Leet046_Permutations_II.cs" />
+    <Compile Include="Leet047_Permutations_II.cs" />
     <Compile Include="Leet048_Rotate_Image.cs" />
     <Compile Include="Leet049_Group_Anagrams.cs" />
     <Compile Include="Leet050_Pow_x_n.cs" />

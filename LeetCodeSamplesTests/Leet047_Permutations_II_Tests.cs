@@ -10,7 +10,7 @@ using LeetCodeSamples.Util;
 namespace LeetCodeSamples.Tests
 {
     [TestClass()]
-    public class Leet046_Permutations_II_Tests
+    public class Leet047_Permutations_II_Tests
     {
         [TestMethod()]
         public void permuteUnique_Test()
@@ -18,7 +18,7 @@ namespace LeetCodeSamples.Tests
             var exp = new List<List<int>> {
                 new List<int>{ 1, 1, 2 }, new List<int>{ 1, 2, 1 }, new List<int>{ 2, 1, 1 }
             };
-            var result = new Leet046_Permutations_II().permuteUnique(new int[] { 1, 1, 2 });
+            var result = new Leet047_Permutations_II().permuteUnique(new int[] { 1, 1, 2 });
 
             ColOp.AreEqual(result, exp);
 

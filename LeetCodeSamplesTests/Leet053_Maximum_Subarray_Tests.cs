@@ -20,6 +20,24 @@ namespace LeetCodeSamples.Tests
 
             input = new int[] { -1, 3, -5, 6, -6, 8, -9};
             Assert.AreEqual(8, new Leet053_Maximum_Subarray().MaxSubArray(input));
+
+            input = new int[] { -2, 1,-3, 4,-1, 2, 1,-5, 4};
+            Assert.AreEqual(6, new Leet053_Maximum_Subarray().MaxSubArray(input));
+
+
+
+
+            input = new int[] { 1, 3, 5, 6, 6, 8, 9, 99, 99, 102 };
+            Assert.AreEqual(338, new Leet053_Maximum_Subarray().maxSubArray2(input));
+
+
+            input = new int[] { -1, 3, -5, 6, -6, 8, -9 };
+            Assert.AreEqual(8, new Leet053_Maximum_Subarray().maxSubArray2(input));
+
+            input = new int[] { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+            Assert.AreEqual(6, new Leet053_Maximum_Subarray().maxSubArray2(input));
+
+
         }
     }
 }
