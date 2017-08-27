@@ -9,13 +9,12 @@ using System.Threading.Tasks;
 namespace LeetCodeSamples.Tests
 {
     [TestClass()]
-    public class Leet062_Unique_Paths_Tests
+    public class Leet070_Climbing_Stairs_Tests
     {
         [TestMethod()]
-        public void UniquePaths_Test()
+        public void climbStairs_Test()
         {
-            Assert.AreEqual(3, new Leet062_Unique_Paths().UniquePaths(2, 3));
-            Assert.AreEqual(4, new Leet062_Unique_Paths().UniquePaths(2, 4));
+            Assert.AreEqual(3, Leet070_Climbing_Stairs.climbStairs(3));
         }
     }
 }

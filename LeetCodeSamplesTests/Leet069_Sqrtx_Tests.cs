@@ -9,13 +9,14 @@ using System.Threading.Tasks;
 namespace LeetCodeSamples.Tests
 {
     [TestClass()]
-    public class Leet062_Unique_Paths_Tests
+    public class Leet069_Sqrtx_Tests
     {
         [TestMethod()]
-        public void UniquePaths_Test()
+        public void mySqrt_Test()
         {
-            Assert.AreEqual(3, new Leet062_Unique_Paths().UniquePaths(2, 3));
-            Assert.AreEqual(4, new Leet062_Unique_Paths().UniquePaths(2, 4));
+            Assert.AreEqual(5, Leet069_Sqrtx.mySqrt(25));
+
+            Assert.AreEqual(5, Leet069_Sqrtx.mySqrt2(25));
         }
     }
 }

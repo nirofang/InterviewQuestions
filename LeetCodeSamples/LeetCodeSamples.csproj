@@ -94,6 +94,8 @@
     <Compile Include="Leet048_Rotate_Image.cs" />
     <Compile Include="Leet049_Group_Anagrams.cs" />
     <Compile Include="Leet050_Pow_x_n.cs" />
+    <Compile Include="Leet051_NQueens.cs" />
+    <Compile Include="Leet052_NQueen_II.cs" />
     <Compile Include="Leet053_Maximum_Subarray.cs" />
     <Compile Include="Leet054_Spiral_Matrix.cs" />
     <Compile Include="Leet055_Jump_Game.cs" />
@@ -101,6 +103,8 @@
     <Compile Include="Leet057_Insert_Interval.cs" />
     <Compile Include="Leet058_Length_of_Last_Word.cs" />
     <Compile Include="Leet059_Spiral_Matrix_II.cs" />
+    <Compile Include="Leet060_Permutation_Sequence.cs" />
+    <Compile Include="Leet061_Rotate_List.cs" />
     <Compile Include="Leet062_Unique_Paths.cs" />
     <Compile Include="Leet063_Unique_Paths_II.cs" />
     <Compile Include="Leet064_Minimum_Path_Sum.cs" />
@@ -108,6 +112,8 @@
     <Compile Include="Leet066_Plus_One.cs" />
     <Compile Include="Leet067_Add_Binary.cs" />
     <Compile Include="Leet068_Text_Justification.cs" />
+    <Compile Include="Leet069_Sqrtx.cs" />
+    <Compile Include="Leet070_Climbing_Stairs.cs" />
     <Compile Include="Leet071_Simplify_Path.cs" />
     <Compile Include="Leet072_Edit_Distance.cs" />
     <Compile Include="Leet073_Set_Matrix_Zeroes.cs" />

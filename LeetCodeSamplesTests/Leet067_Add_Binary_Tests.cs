@@ -15,6 +15,9 @@ namespace LeetCodeSamples.Tests
         public void AddBinary_Test()
         {
             Assert.AreEqual("1110", new Leet067_Add_Binary().AddBinary("1011", "11"));
+
+
+            Assert.AreEqual("1110", new Leet067_Add_Binary().AddBinary("11", "1011"));
         }
     }
 }

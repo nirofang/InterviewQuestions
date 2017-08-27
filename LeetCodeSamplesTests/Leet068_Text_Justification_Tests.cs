@@ -17,7 +17,8 @@ namespace LeetCodeSamples.Tests
             var result = new Leet068_Text_Justification().FullJustify(
                 new string[] { "This", "is", "an", "example", "of", "text", "justification." }, 16);
 
-            CollectionAssert.AreEqual(result.ToArray(), new string[] { "This    is    an", "example  of text", "justification.  " });
+            CollectionAssert.AreEqual(result.ToArray(), 
+                new string[] { "This    is    an", "example  of text", "justification.  " });
         }
     }
 }

@@ -15,6 +15,12 @@ namespace LeetCodeSamples.Tests
         public void IsNumber_Test()
         {
             Assert.IsTrue(new Leet065_Valid_Number().IsNumber(" +3.1e-1 "));
+
+            Assert.IsTrue(new Leet065_Valid_Number().IsNumber(" -0.331e-1 "));
+
+            Assert.IsTrue(new Leet065_Valid_Number().IsNumber(" -.0 "));
+
+            Assert.IsFalse(new Leet065_Valid_Number().IsNumber(" -.e-1 "));
         }
     }
 }

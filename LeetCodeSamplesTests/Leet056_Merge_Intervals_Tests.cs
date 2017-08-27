@@ -15,10 +15,24 @@ namespace LeetCodeSamples.Tests
         [TestMethod()]
         public void Merge_Test()
         {
-            var result = new Leet056_Merge_Intervals().Merge(new List<Interval> {
-                new Interval(1, 3), new Interval(2, 6), new Interval(8, 10), new Interval(15, 18)});
-            CollectionAssert.AreEqual(result.ToArray(), new List<Interval> {
-                new Interval(1, 6), new Interval(8, 10), new Interval(15, 18)});
+            var list = new List<Interval> {
+                new Interval(1, 3), new Interval(2, 6),
+                new Interval(8, 10), new Interval(15, 18)};
+
+            var result = new Leet056_Merge_Intervals().Merge(list);
+
+            var exp = new List<Interval> {
+                new Interval(1, 6),
+                new Interval(8, 10),
+                new Interval(15, 18)};
+
+            CollectionAssert.AreEqual(result.ToArray(),exp);
+
+            result = Leet056_Merge_Intervals.merge2(list);
+
+
+            CollectionAssert.AreEqual(result.ToArray(), exp);
+
         }
     }
 }

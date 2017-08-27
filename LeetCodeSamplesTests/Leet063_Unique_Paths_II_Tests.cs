@@ -14,8 +14,11 @@ namespace LeetCodeSamples.Tests
         [TestMethod()]
         public void UniquePathsWithObstacles_Test()
         {
-            Assert.AreEqual(2, new Leet063_Unique_Paths_II().UniquePathsWithObstacles(new int[,] { { 0, 0, 0 }, { 0, 1, 0 }, { 0, 0, 0 } }));
+            var ob = new int[,] { { 0, 0, 0 }, { 0, 1, 0 }, { 0, 0, 0 } };
+            Assert.AreEqual(2, new Leet063_Unique_Paths_II().UniquePathsWithObstacles(ob));
 
+            ob = new int[,] { { 0, 1, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
+            Assert.AreEqual(4, new Leet063_Unique_Paths_II().UniquePathsWithObstacles(ob));
         }
     }
 }

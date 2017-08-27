@@ -14,8 +14,14 @@ namespace LeetCodeSamples.Tests
         [TestMethod()]
         public void MinPathSum_Test()
         {
-            int result = new Leet064_Minimum_Path_Sum().MinPathSum(new int[,] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } });
+            var map = new int[,] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+            int result = new Leet064_Minimum_Path_Sum().MinPathSum(map);
             Assert.AreEqual(result, 21);
+
+            map = new int[,] { { 1, 2, 3 }, { 6, 5, 4 }, { 9, 8, 7 } };
+            result = new Leet064_Minimum_Path_Sum().MinPathSum(map);
+            Assert.AreEqual(result, 17);
+
         }
     }
 }

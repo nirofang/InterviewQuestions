@@ -9,13 +9,14 @@ using System.Threading.Tasks;
 namespace LeetCodeSamples.Tests
 {
     [TestClass()]
-    public class Leet062_Unique_Paths_Tests
+    public class Leet052_NQueen_II_Tests
     {
         [TestMethod()]
-        public void UniquePaths_Test()
+        public void totalNQueensII_Test()
         {
-            Assert.AreEqual(3, new Leet062_Unique_Paths().UniquePaths(2, 3));
-            Assert.AreEqual(4, new Leet062_Unique_Paths().UniquePaths(2, 4));
+            Assert.AreEqual(2, Leet052_NQueen_II.totalNQueensII(4));
+            Assert.AreEqual(2, Leet052_NQueen_II.totalNQueensII2(4));
+            Assert.AreEqual(2, Leet052_NQueen_II.totalNQueensII3(4));
         }
     }
 }

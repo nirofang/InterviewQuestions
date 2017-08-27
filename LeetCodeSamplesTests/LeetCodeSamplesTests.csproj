@@ -99,6 +99,8 @@
     <Compile Include="Leet048_Rotate_Image_Tests.cs" />
     <Compile Include="Leet049_Group_Anagrams_Tests.cs" />
     <Compile Include="Leet050_Pow_x_n_Tests.cs" />
+    <Compile Include="Leet051_NQueens_Tests.cs" />
+    <Compile Include="Leet052_NQueen_II_Tests.cs" />
     <Compile Include="Leet053_Maximum_Subarray_Tests.cs" />
     <Compile Include="Leet054_Spiral_Matrix_Tests.cs" />
     <Compile Include="Leet055_Jump_Game_Tests.cs" />
@@ -106,6 +108,8 @@
     <Compile Include="Leet057_Insert_Interval_Tests.cs" />
     <Compile Include="Leet058_Length_of_Last_Word_Tests.cs" />
     <Compile Include="Leet059_Spiral_Matrix_II_Tests.cs" />
+    <Compile Include="Leet060_Permutation_Sequence_Tests.cs" />
+    <Compile Include="Leet061_Rotate_List_Tests.cs" />
     <Compile Include="Leet062_Unique_Paths_Tests.cs" />
     <Compile Include="Leet063_Unique_Paths_II_Tests.cs" />
     <Compile Include="Leet064_Minimum_Path_Sum_Tests.cs" />
@@ -113,6 +117,8 @@
     <Compile Include="Leet066_Plus_One_Tests.cs" />
     <Compile Include="Leet067_Add_Binary_Tests.cs" />
     <Compile Include="Leet068_Text_Justification_Tests.cs" />
+    <Compile Include="Leet069_Sqrtx_Tests.cs" />
+    <Compile Include="Leet070_Climbing_Stairs_Tests.cs" />
     <Compile Include="Leet071_Simplify_Path_Tests.cs" />
     <Compile Include="Leet072_Edit_Distance_Tests.cs" />
     <Compile Include="Leet073_Set_Matrix_Zeroes_Tests.cs" />

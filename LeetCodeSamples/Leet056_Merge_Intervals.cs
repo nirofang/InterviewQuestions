@@ -1,5 +1,6 @@
 ﻿using LeetCodeSamples.DataStruct;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -69,6 +70,48 @@ namespace LeetCodeSamples
                 return true;
             }
             return false;
+        }
+
+
+
+
+        //static bool comp(const Interval &a, const Interval &b) {
+        //    return (a.start<b.start);
+        //}
+        
+
+        public static List<Interval> merge2(List<Interval> intervals)
+        {
+            List<Interval> res = new List<Interval>();
+            if (intervals.Count == 0)
+            {
+                return res;
+            }
+            //sort(intervals.begin(), intervals.end(), comp);
+            IntervalComparer comp = new IntervalComparer();
+            intervals.Sort(comp);
+
+            res.Add(intervals[0]);
+            for (int i = 1; i < intervals.Count; ++i)
+            {
+                if (res.Last().end >= intervals[i].start)
+                {
+                    res.Last().end = Math.Max(res.Last().end, intervals[i].end);
+                }
+                else
+                {
+                    res.Add(intervals[i]);
+                }
+            }
+            return res;
+        }
+
+        class IntervalComparer : IComparer<Interval>
+        {
+            public int Compare(Interval x, Interval y)
+            {
+                return x.start - y.start;
+            }
         }
     }
 }

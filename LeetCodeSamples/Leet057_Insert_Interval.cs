@@ -98,5 +98,29 @@ namespace LeetCodeSamples
             }
             return false;
         }
+
+
+        public static List<Interval> insert2(List<Interval> intervals, Interval newInterval)
+        {
+            List<Interval> res = intervals;
+            int i = 0, overlap = 0, n = res.Count;
+            while (i < n)
+            {
+                if (newInterval.end < res[i].start) break;
+                else if (newInterval.start > res[i].end) { }
+                else
+                {
+                    newInterval.start = Math.Min(newInterval.start, res[i].start);
+                    newInterval.end = Math.Max(newInterval.end, res[i].end);
+                    ++overlap;
+                }
+                ++i;
+            }
+            if (overlap > 0) res.RemoveRange(i - overlap, overlap);
+            res.Insert(i - overlap, newInterval);
+            return res;
+        }
+
     }
+
 }
