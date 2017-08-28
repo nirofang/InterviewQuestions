@@ -28,15 +28,16 @@ namespace LeetCodeSamples.Tests
 
             var result = new Leet078_Subsets().Subsets(new int[] { 1, 2, 3 });
 
-            result.Contains<IList<int>>(new List<int> { 3 }, ColOp.comp);
-            
+            result.Contains<IList<int>>(new List<int> { 3 }, ColOp.comp);            
+
             List<List<int>> exp = new List<List<int>> { new List<int> { 3 }, new List<int> { 1 },
             new List<int> { 2 }, new List<int> { 1,2,3 },
             new List<int> { 1,3 }, new List<int> { 2,3 },
             new List<int> { 1,2 }, new List<int> {}};
 
 
-            Assert.IsTrue(result.All(x => exp.Contains(x, ColOp.comp)));
+            //Assert.IsTrue(result.All(x => exp.Contains(x, ColOp.comp)));
+            ColOp.AreEqual(result.Select(x=>x.ToList()).ToList(), exp);
         }
     }
 }

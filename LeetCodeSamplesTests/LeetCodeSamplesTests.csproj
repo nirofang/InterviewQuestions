@@ -73,6 +73,7 @@
     <Compile Include="Leet020_Valid_Parentheses_Tests.cs" />
     <Compile Include="Leet021_Merge_Two_Sorted_Lists_Tests.cs" />
     <Compile Include="Leet022_Generate_Parentheses_Tests.cs" />
+    <Compile Include="Leet023_Merge_k_Sorted_Lists_Tests.cs" />
     <Compile Include="Leet024_Swap_Nodes_in_Pairs_Tests.cs" />
     <Compile Include="Leet025_Reverse_Nodes_in_k_Group_Tests.cs" />
     <Compile Include="Leet026_Remove_Duplicates_from_Sorted_Array_Tests.cs" />
@@ -125,9 +126,12 @@
     <Compile Include="Leet074_Search_a_2D_Matrix_Tests.cs" />
     <Compile Include="Leet075_Sort_Colors_Tests.cs" />
     <Compile Include="Leet076_Minimum_Window_Substring_Tests.cs" />
+    <Compile Include="Leet077_Combinations_Tests.cs" />
     <Compile Include="Leet078_Subsets_Tests.cs" />
     <Compile Include="Leet079_Word_Search_Tests.cs" />
+    <Compile Include="Leet080_Remove_Duplicates_from_Sorted_Array_II_Tests.cs" />
     <Compile Include="Leet081_Search_in_Rotated_Sorted_Array_II_Tests.cs" />
+    <Compile Include="Leet082_Remove_Duplicates_from_Sorted_List_II_Tests.cs" />
     <Compile Include="Leet084_Largest_Rectangle_in_Histogram_Tests.cs" />
     <Compile Include="Leet087_Scramble_String_Tests.cs" />
     <Compile Include="Leet088_Merge_Sorted_Array_Tests.cs" />

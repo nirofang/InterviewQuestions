@@ -18,6 +18,24 @@ namespace LeetCodeSamples.Tests
             Assert.IsTrue(new Leet074_Search_a_2D_Matrix().SearchMatrix(input, 103));
 
             Assert.IsFalse(new Leet074_Search_a_2D_Matrix().SearchMatrix(input, 9));
+
+            List<List<int>> lists = new List<List<int>>();
+            for (int i = 0; i < input.GetLength(0); i++)
+            {
+                List<int> list = new List<int>();
+                for (int j = 0; j < input.GetLength(1); j++)
+                {
+                    list.Add(input[i, j]);
+                }
+                lists.Add(list);
+            }
+
+
+            Assert.IsTrue(Leet074_Search_a_2D_Matrix.searchMatrix1(lists, 103));
+
+            Assert.IsTrue(Leet074_Search_a_2D_Matrix.searchMatrix2(lists, 103));
+
         }
+
     }
 }

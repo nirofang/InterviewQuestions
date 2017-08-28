@@ -16,6 +16,8 @@ namespace LeetCodeSamples.Tests
         {
             Assert.AreEqual("BANC", new Leet076_Minimum_Window_Substring().MinWindow("ADOBECODEBANC", "ABC"));
 
+            Assert.AreEqual("BANC", Leet076_Minimum_Window_Substring.minWindow("ADOBECODEBANC", "ABC"));
+
         }
     }
 }

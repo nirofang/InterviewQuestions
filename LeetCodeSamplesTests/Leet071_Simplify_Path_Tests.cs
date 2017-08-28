@@ -18,6 +18,12 @@ namespace LeetCodeSamples.Tests
             Assert.AreEqual("/home", new Leet071_Simplify_Path().SimplifyPath("/home/"));
 
             Assert.AreEqual("/c", new Leet071_Simplify_Path().SimplifyPath("/a/./b/../../c/"));
+
+            Assert.AreEqual("/home", new Leet071_Simplify_Path().SimplifyPath("/home"));
+
+            Assert.AreEqual("/", new Leet071_Simplify_Path().SimplifyPath("///"));
+
+            Assert.AreEqual("/", new Leet071_Simplify_Path().SimplifyPath("/../../"));
         }
     }
 }

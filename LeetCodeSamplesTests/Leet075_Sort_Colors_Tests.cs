@@ -21,6 +21,22 @@ namespace LeetCodeSamples.Tests
             int[] exp = new int[] { 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 2 };
 
             CollectionAssert.AreEqual(input, exp);
+
+            input = new int[] { 0, 1, 1, 2, 1, 0, 0, 2, 2, 1, 2, 2 };
+
+            var list = new List<int>(input);
+            Leet075_Sort_Colors.sortColors1(list);
+
+            CollectionAssert.AreEqual(list, exp);
+
+
+            input = new int[] { 0, 1, 1, 2, 1, 0, 0, 2, 2, 1, 2, 2 };
+
+            list = new List<int>(input);
+            Leet075_Sort_Colors.sortColors2(list);
+
+            CollectionAssert.AreEqual(list, exp);
+
         }
     }
 }

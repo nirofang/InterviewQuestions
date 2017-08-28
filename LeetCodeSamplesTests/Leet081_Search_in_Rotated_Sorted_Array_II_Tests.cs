@@ -15,9 +15,12 @@ namespace LeetCodeSamples.Tests
         public void Search_Test()
         {
             //int[] input = new int[] { 0, 1, 2, 4, 5, 6, 7 };
-            int[] input = new int[] { 4, 5, 6, 7, 0, 1, 2 };
+            int[] input = new int[] { 2, 4, 5, 6, 6, 7, 0, 1, 2 };
             Assert.IsTrue(new Leet081_Search_in_Rotated_Sorted_Array_II().Search(input, 2));
             Assert.IsFalse(new Leet081_Search_in_Rotated_Sorted_Array_II().Search(input, 8));
+
+            Assert.IsTrue(Leet081_Search_in_Rotated_Sorted_Array_II.search(input, 2));
+            Assert.IsFalse(Leet081_Search_in_Rotated_Sorted_Array_II.search(input, 8));
         }
     }
 }
