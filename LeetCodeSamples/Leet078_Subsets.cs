@@ -44,5 +44,32 @@ namespace LeetCodeSamples
                 }
             }
         }
+
+
+        public static IList<IList<int>> Subsets_Own(int[] nums)
+        {
+            if (nums == null || nums.Length == 0)
+            {
+                return null;
+            }
+            IList<IList<int>> res = new List<IList<int>>();
+            List<int> temp = new List<int>();
+            dfs(nums, temp, 0, res);
+            return res;
+
+        }
+
+        static void dfs(int[] nums, List<int> temp, int start, IList<IList<int>> res)
+        {
+            res.Add(new List<int>(temp));
+
+            for (int i = start; i < nums.Length; i++)
+            {
+                temp.Add(nums[i]);
+                dfs(nums, temp, i+1, res);
+                temp.RemoveAt(temp.Count - 1);
+
+            }
+        }
     }
 }
