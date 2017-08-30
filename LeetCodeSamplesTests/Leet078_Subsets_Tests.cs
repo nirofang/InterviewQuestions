@@ -38,6 +38,11 @@ namespace LeetCodeSamples.Tests
 
             //Assert.IsTrue(result.All(x => exp.Contains(x, ColOp.comp)));
             ColOp.AreEqual(result.Select(x=>x.ToList()).ToList(), exp);
+
+
+            result = Leet078_Subsets.Subsets_Own(new int[] { 1, 2, 3 });
+            ColOp.AreEqual(result.Select(x => x.ToList()).ToList(), exp);
+
         }
     }
 }
