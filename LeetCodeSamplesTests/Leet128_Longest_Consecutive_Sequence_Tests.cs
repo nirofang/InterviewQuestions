@@ -16,7 +16,7 @@ namespace LeetCodeSamples.Tests
         {
             int[] input = new int[] { 100, 4, 200, 1, 3, 2 };
             var res = Leet128_Longest_Consecutive_Sequence.longestConsecutive(input);
-            int[] exp = new int[] { 4, 1, 3, 2 };
+            int[] exp = new int[] { 1, 2, 3, 4 };
 
             CollectionAssert.AreEqual(res, exp);
         }

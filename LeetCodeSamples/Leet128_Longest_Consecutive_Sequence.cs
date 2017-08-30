@@ -25,12 +25,14 @@ namespace LeetCodeSamples
                     low--;
                     len++;
                 }
+                low++;
                 int high = num + 1;
-                while (set.Contains(low))
+                while (set.Contains(high))
                 {
-                    low--;
+                    high++;
                     len++;
                 }
+                high--;
                 if(len>maxlen)
                 {
                     maxlen = len;
@@ -38,7 +40,7 @@ namespace LeetCodeSamples
                     max = high;
                 }
             }
-            for(int i = min; i < max; i++)
+            for(int i = min; i <= max; i++)
             {
                 output.Add(i);
             }
