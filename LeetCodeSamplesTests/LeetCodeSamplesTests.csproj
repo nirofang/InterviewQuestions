@@ -131,8 +131,11 @@
     <Compile Include="Leet079_Word_Search_Tests.cs" />
     <Compile Include="Leet080_Remove_Duplicates_from_Sorted_Array_II_Tests.cs" />
     <Compile Include="Leet081_Search_in_Rotated_Sorted_Array_II_Tests.cs" />
-    <Compile Include="Leet082_Remove_Duplicates_from_Sorted_List_II_Tests.cs" />
+    <Compile Include="Leet082_Remove_Duplicates_from_Sorted_List_Tests.cs" />
+    <Compile Include="Leet083_Remove_Duplicates_from_Sorted_List_II_Tests.cs" />
     <Compile Include="Leet084_Largest_Rectangle_in_Histogram_Tests.cs" />
+    <Compile Include="Leet085_Maximal_Rectangle_Tests.cs" />
+    <Compile Include="Leet086_Partition_List_Tests.cs" />
     <Compile Include="Leet087_Scramble_String_Tests.cs" />
     <Compile Include="Leet088_Merge_Sorted_Array_Tests.cs" />
     <Compile Include="Leet090_Subsets_II_Tests.cs" />

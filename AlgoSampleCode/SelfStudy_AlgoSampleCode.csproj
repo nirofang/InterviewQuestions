@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Heap.cs" />
     <Compile Include="Digit\Combinations.cs" />
     <Compile Include="Digit\FindSubset.cs" />
     <Compile Include="Digit\Search.cs" />

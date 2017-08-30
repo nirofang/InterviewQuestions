@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LeetCodeSamples
 {
-    public class Leet082_Remove_Duplicates_from_Sorted_List_II
+    public class Leet082_Remove_Duplicates_from_Sorted_List
     {
         public static ListNode deleteDuplicates(ListNode head)
         {
