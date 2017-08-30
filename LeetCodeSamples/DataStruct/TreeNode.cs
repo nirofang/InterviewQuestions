@@ -65,6 +65,28 @@ namespace LeetCodeSamples.DataStruct
             return prevNode;
         }
 
+        public bool EqualsTo(TreeNode exp)
+        {
+            return dfs(this, exp);
+
+        }
+
+        private bool dfs(TreeNode treeNode, TreeNode exp)
+        {
+            if (treeNode==null && exp ==null)
+            {
+                return true;
+            }
+            else if((treeNode == null && exp != null) ||
+                (treeNode != null && exp == null))
+            {
+                return false;
+            }
+            bool left = dfs(treeNode.left, exp.left);
+            bool right = dfs(treeNode.right, exp.right);
+            return (left && right && treeNode.val == exp.val);
+        }
+
         public TreeNode CreateTree2(string[] vals)
         {
             TreeNode root = null;

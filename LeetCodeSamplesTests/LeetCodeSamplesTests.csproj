@@ -155,7 +155,9 @@
     <Compile Include="Leet128_Longest_Consecutive_Sequence_Tests.cs" />
     <Compile Include="Leet131_Palindrome_Partitioning_Tests.cs" />
     <Compile Include="Leet136_Single_Number_Tests.cs" />
+    <Compile Include="Leet144_Binary_Tree_Preorder_Traversal_Tests.cs" />
     <Compile Include="Leet257_Binary_Tree_Path_Tests.cs" />
+    <Compile Include="Leet538_Convert_BST_to_Greater_Tree_Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Util\CollOp.cs" />
   </ItemGroup>

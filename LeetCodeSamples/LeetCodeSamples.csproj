@@ -150,7 +150,9 @@
     <Compile Include="Leet128_Longest_Consecutive_Sequence.cs" />
     <Compile Include="Leet131_Palindrome_Partitioning.cs" />
     <Compile Include="Leet136_Single_Number.cs" />
+    <Compile Include="Leet144_Binary_Tree_Preorder_Traversal.cs" />
     <Compile Include="Leet257_Binary_Tree_Path.cs" />
+    <Compile Include="Leet538_Convert_BST_to_Greater_Tree.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
