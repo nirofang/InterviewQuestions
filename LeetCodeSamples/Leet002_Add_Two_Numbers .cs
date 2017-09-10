@@ -97,7 +97,17 @@ namespace LeetCodeSamples
 
             while (l1 != null || l2 != null)
             {
-                sum = l1.val + l2.val + carry;
+                if (l1!=null)
+                {
+                    sum += l1.val;
+                }
+
+                if (l2 != null)
+                {
+                    sum += l2.val;
+                }
+
+                sum += carry;
                 carry = sum / 10;
 
                 sum = sum % 10;

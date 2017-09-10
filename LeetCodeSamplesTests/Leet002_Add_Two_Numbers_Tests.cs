@@ -60,6 +60,19 @@ namespace LeetCodeSamples.Tests
 
             result_self = new Leet002_Add_Two_Numbers().Add_Two_Numbers_Own(a, newc);
             Assert.AreEqual(result_self, newac);
+
+            a = new ListNode(new int[] { 1, 2, 3 });
+            b = new ListNode(new int[] {});
+            result = new Leet002_Add_Two_Numbers().Add_Two_Numbers_Own(a, b);
+            var exp = new ListNode(new int[] { 1, 2, 3 });
+            Assert.AreEqual(result, exp);
+
+            a = new ListNode(new int[] { 1, 2, 3 });
+            result = new Leet002_Add_Two_Numbers().Add_Two_Numbers_Own(a, null);
+            exp = new ListNode(new int[] { 1, 2, 3 });
+            Assert.AreEqual(result, exp);
+
+
         }
     }
 }

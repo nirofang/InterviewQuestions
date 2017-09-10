@@ -52,6 +52,20 @@ namespace LeetCodeSamples.Tests
             int[] result = new Leet001_Two_Sum().Two_Sum_dic_n_Self(new int[] { 1, 2, 3 }, 3);
 
             CollectionAssert.AreEqual(result, new int[] { 0, 1 });
+
+            result = new Leet001_Two_Sum().Two_Sum_dic_n_Self(new int[] { 1 }, 3);
+            Assert.IsNull(result);
+
+            result = new Leet001_Two_Sum().Two_Sum_dic_n_Self(new int[] { 1 }, 2);
+            //CollectionAssert.AreEqual(result, new int[] { 0, 0 });
+            Assert.IsNull(result);
+
+            result = new Leet001_Two_Sum().Two_Sum_dic_n_Self(new int[] { 1 , 2}, 3);
+            CollectionAssert.AreEqual(result, new int[] { 0, 1 });
+
+            result = new Leet001_Two_Sum().Two_Sum_dic_n_Self(new int[] { 0, 1, 2, 6, 23, 55 }, 25);
+            CollectionAssert.AreEqual(result, new int[] { 2, 4 });
+
         }
 
     }
