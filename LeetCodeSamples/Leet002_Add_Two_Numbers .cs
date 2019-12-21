@@ -95,7 +95,7 @@ namespace LeetCodeSamples
             ListNode head = null;
             ListNode prev = null;
 
-            while (l1 != null || l2 != null)
+            while (l1 != null && l2 != null)
             {
                 if (l1!=null)
                 {
@@ -124,6 +124,7 @@ namespace LeetCodeSamples
                 }
                 l1 = l1.next;
                 l2 = l2.next;
+                sum = 0;
             }
 
             ListNode l = (l1 == null) ? l2 : l1;
@@ -133,8 +134,18 @@ namespace LeetCodeSamples
                 sum = l.val + carry;
                 carry = sum / 10;
                 sum = sum % 10;
-                prev.next = new ListNode(sum);
-                prev = prev.next;
+                if (head == null)
+                {
+                    head = new ListNode(sum);
+                    prev = head;
+                }
+                else
+                {
+                    prev.next = new ListNode(sum);
+                    prev = prev.next;
+                }
+                l = l.next;
+                
             }
 
             if (carry == 1)
